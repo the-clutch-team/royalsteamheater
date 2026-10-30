@@ -1,5 +1,5 @@
-const base='https://royalsteamheater.com/wp-content/uploads/';
-const images={weld:base+'2018/10/Welding1.jpg',roof:base+'2018/10/Rooftop_equipment.jpg',pipes:base+'2018/10/Valves_pipes.jpg',fire:base+'2018/10/fire_protection.jpg',metal:base+'2018/10/Sheet_metal_rolls.jpg',system:base+'2018/10/commercial_system.jpg'};
+const assetBase = new URL('assets/images/', document.currentScript.src).href;
+const images={weld:assetBase+'Welding1.jpg',roof:assetBase+'Rooftop_equipment.jpg',pipes:assetBase+'Valves_pipes.jpg',fire:assetBase+'fire_protection.jpg',metal:assetBase+'Sheet_metal_rolls.jpg',system:assetBase+'commercial_system.jpg'};
 const pages=[['Home','/'],['Our History','/history-125-years/'],['Our Team','/our-team/'],['Services','/services/'],['Projects','/our-projects/'],['Affiliations','/affiliations/'],['Contact','/contact-us/'],['News','/news-articles/']];
 const siteRoot = new URL('./', document.currentScript.src).pathname.replace(/\/$/, '');
 const localPath = location.pathname.startsWith(siteRoot + '/') ? location.pathname.slice(siteRoot.length) : location.pathname;
