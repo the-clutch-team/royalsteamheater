@@ -1,7 +1,7 @@
 (() => {
   const site = document.currentScript?.dataset.site;
   // Replace this with the Web app URL from Apps Script. It must end in /exec.
-  const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx_ZIw4b4D1GjucOOdBsDh6ELjLp-q1j8P_g252M91irxAcVzVpY_jeOmUw2phtJaBd/exec';
+  const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyD5N3R-HK4Z5qasPBU-_RkGBnFJAee9Amd35B4Swdyl_WjLuIaSmBaja-anTBdAlrm/exec';
   if (!site || !['the-clutch-team.github.io', 'aamad-chaudhary.github.io'].includes(location.hostname)) return;
   if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(ENDPOINT)) return;
   const key = 'google-preview-alert:' + site;
